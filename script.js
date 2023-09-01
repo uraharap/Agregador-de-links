@@ -6,6 +6,7 @@ function toggleMode() {
   // } else {
   // html.classList.add("light");
   // }
+
   html.classList.toggle('light')
 
     // pegar a tag img
@@ -14,10 +15,11 @@ function toggleMode() {
 
     const img = document.querySelector("#profile img") 
         if (html.classList.contains("light")) {
-        // se estiver light mode, adicionar a imagem light.
+        // se estiver light mode, adicionar a avatar-light.png
             img.setAttribute('src', './assets/avatar-light.png')
         } else {
             img.setAttribute('src', './assets/avatar.png')
+        // se não, manter avatar.png
         }
 
 }
